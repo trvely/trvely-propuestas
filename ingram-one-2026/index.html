@@ -1,0 +1,453 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#B41241">
+<title>ONE 2026 · Ingram Colombia · Punta Cana — Propuesta Trvely</title>
+<meta name="description" content="Propuesta de viaje corporativo Trvely SAS — Ingram Colombia, ONE 2026, Punta Cana, 17 al 20 de noviembre de 2026.">
+<style>
+  /* ---------- Fuentes de marca (servidas del repo, sin depender de internet) ---------- */
+  @font-face{font-family:'Extenda';   src:url('../assets/extenda.ttf') format('truetype'); font-weight:400; font-display:swap;}
+  @font-face{font-family:'WhiteStar'; src:url('../assets/whitestar.otf') format('opentype'); font-weight:400; font-display:swap;}
+  @font-face{font-family:'Montserrat';src:url('../assets/montserrat-regular.ttf') format('truetype'); font-weight:400; font-display:swap;}
+  @font-face{font-family:'Montserrat';src:url('../assets/montserrat-semibold.ttf') format('truetype'); font-weight:600; font-display:swap;}
+  @font-face{font-family:'Montserrat';src:url('../assets/montserrat-extrabold.ttf') format('truetype'); font-weight:800; font-display:swap;}
+
+  :root{
+    --burg:#B41241; --burg-hondo:#7C0C2C; --beige:#F4E5D2; --crema:#FAF7F2; --nieve:#fff;
+    --tinta:#1C1B1A; --gris:#7C7671; --linea:#E9DFD4; --linea-fuerte:#DED2C4;
+    --ancho:1180px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Montserrat','Segoe UI',system-ui,sans-serif; background:var(--crema); color:var(--tinta);
+       font-size:15px; line-height:1.62; -webkit-font-smoothing:antialiased;}
+  img{display:block; max-width:100%;}
+  ::selection{background:var(--beige);}
+  .caja{max-width:var(--ancho); margin:0 auto; padding:0 22px;}
+  /* Extenda: SOLO mayusculas y UN peso. Nunca bold -> el navegador la deforma (faux bold). */
+  .extenda{font-family:'Extenda','Montserrat',sans-serif; font-weight:400; text-transform:uppercase; letter-spacing:1px;}
+  .firma{font-family:'WhiteStar','Segoe Script',cursive; font-weight:400;}
+
+  /* ---------- Barra de marca ---------- */
+  .barra{background:var(--burg); color:#fff;}
+  .barra .caja{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:13px 22px;}
+  .barra img{height:22px}
+  .barra span{font-size:10.5px; letter-spacing:2.2px; text-transform:uppercase; color:var(--beige); font-weight:600;}
+  .barra button{background:transparent; border:1px solid rgba(244,229,210,.45); color:var(--beige); border-radius:999px;
+    padding:0 16px; min-height:34px; font-size:11px; letter-spacing:1.4px; text-transform:uppercase; font-weight:600;
+    cursor:pointer; font-family:inherit;}
+  .barra button:hover{background:rgba(244,229,210,.14);}
+  .barra .dcha{display:flex; align-items:center; gap:14px;}
+
+  /* ---------- Hero partido: color AL LADO de la foto, nunca encima ---------- */
+  .hero{background:radial-gradient(120% 140% at 88% 0%, #99143C 0%, var(--burg) 45%, var(--burg-hondo) 100%);
+        color:#fff; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:stretch;}
+  .hero-texto{padding:60px 44px 62px max(22px, calc((100vw - var(--ancho)) / 2 + 22px)); align-self:center;}
+  .hero-kicker{font-size:11px; letter-spacing:3px; text-transform:uppercase; color:var(--beige); font-weight:600;}
+  .hero h1{font-size:clamp(46px,7vw,86px); line-height:.92; margin:14px 0 6px;}
+  .hero h2{font-family:'Montserrat',sans-serif; font-weight:800; font-size:clamp(19px,2.4vw,27px);
+           line-height:1.14; color:var(--beige); margin-bottom:20px;}
+  .hero-meta{display:flex; flex-wrap:wrap; gap:9px; margin-top:24px;}
+  .hero-meta b{background:rgba(255,255,255,.13); border:1px solid rgba(244,229,210,.34); border-radius:999px;
+               padding:7px 15px; font-size:12.5px; font-weight:600; letter-spacing:.3px;}
+  .hero-foto{position:relative; min-height:430px; background:#7C0C2C;}
+  .hero-foto img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;}
+
+  /* ---------- Franja de datos duros ---------- */
+  .datos{background:var(--beige); border-top:3px solid var(--burg);}
+  .datos .rejilla{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--linea-fuerte);}
+  .datos .celda{background:var(--beige); padding:20px 18px; text-align:center;}
+  .datos .dato{font-family:'Montserrat',sans-serif; font-weight:800; font-size:clamp(20px,2.6vw,29px); line-height:1.05; color:var(--burg-hondo);}
+  .datos .rot{font-size:10.5px; letter-spacing:1.7px; text-transform:uppercase; color:#8A6A55; margin-top:6px; font-weight:600;}
+
+  /* ---------- Secciones ---------- */
+  section{padding:62px 0;}
+  section.claro{background:var(--nieve); border-top:1px solid var(--linea); border-bottom:1px solid var(--linea);}
+  .titulo{margin-bottom:30px;}
+  .titulo .ojo{font-size:10.5px; letter-spacing:2.6px; text-transform:uppercase; color:var(--burg); font-weight:600;}
+  .titulo h3{font-size:clamp(27px,3.6vw,42px); line-height:1; margin-top:9px;}
+  .titulo p{color:var(--gris); max-width:62ch; margin-top:12px;}
+
+  .duo{display:grid; grid-template-columns:1.05fr .95fr; gap:34px; align-items:center;}
+  .duo.invertido{grid-template-columns:.95fr 1.05fr;}
+  .duo h4{font-family:'Montserrat',sans-serif; font-weight:800; font-size:22px; line-height:1.2; margin-bottom:12px;}
+  .duo p + p{margin-top:11px;}
+  .duo .pie{font-size:12.5px; color:var(--gris); margin-top:14px; padding-top:13px; border-top:1px solid var(--linea);}
+  figure{border-radius:3px; overflow:hidden; background:var(--linea);}
+  figure img{width:100%; height:100%; object-fit:cover;}
+  .par{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+
+  /* ---------- Pestañas de opción ---------- */
+  .pestanas{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:26px;}
+  .pestanas button{font-family:inherit; cursor:pointer; background:var(--nieve); color:var(--tinta);
+    border:1px solid var(--linea-fuerte); border-radius:999px; padding:11px 22px; min-height:44px;
+    font-size:13.5px; font-weight:600; transition:background .2s, color .2s, border-color .2s;}
+  .pestanas button:hover{border-color:var(--burg);}
+  .pestanas button[aria-selected="true"]{background:var(--burg); border-color:var(--burg); color:#fff;}
+  .pestanas.sobre-vino button{background:rgba(0,0,0,.14); border-color:rgba(244,229,210,.34); color:var(--beige);}
+  .pestanas.sobre-vino button[aria-selected="true"]{background:var(--beige); border-color:var(--beige); color:var(--burg-hondo);}
+
+  /* ---------- Habitaciones ---------- */
+  .habs{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px;}
+  .hab{background:var(--nieve); border:1px solid var(--linea); border-radius:3px; overflow:hidden; display:flex; flex-direction:column;}
+  .hab img{aspect-ratio:4/3; width:100%; object-fit:cover;}
+  .hab .cuerpo{padding:17px 18px 19px;}
+  .hab .n{font-family:'Montserrat',sans-serif; font-weight:800; font-size:31px; line-height:1; color:var(--burg);}
+  .hab .tipo{font-weight:600; margin-top:5px;}
+  .hab .det{font-size:13px; color:var(--gris); margin-top:4px;}
+  .resumen-hab{margin-top:20px; font-size:13.5px; color:var(--gris); border-top:1px solid var(--linea); padding-top:16px;}
+
+  /* ---------- Incluye ---------- */
+  .incluye{display:grid; grid-template-columns:1fr 1fr; gap:0 38px; counter-reset:i;}
+  .incluye li{list-style:none; counter-increment:i; padding:17px 0 17px 52px; position:relative; border-bottom:1px solid var(--linea);}
+  .incluye li::before{content:counter(i,decimal-leading-zero); position:absolute; left:0; top:16px;
+      font-family:'Montserrat',sans-serif; font-weight:800; font-size:13px; color:var(--burg);
+      background:var(--beige); border-radius:50%; width:34px; height:34px; display:grid; place-items:center;}
+  .incluye b{display:block; font-weight:600;}
+  .incluye small{color:var(--gris); font-size:13px;}
+
+  /* ---------- Inversion ---------- */
+  .inversion{background:radial-gradient(120% 160% at 12% 0%, #99143C 0%, var(--burg) 46%, var(--burg-hondo) 100%); color:#fff;}
+  .precios{display:grid; grid-template-columns:1.15fr .85fr; gap:20px; align-items:stretch;}
+  .precio{border:1px solid rgba(244,229,210,.32); border-radius:4px; padding:30px 28px; background:rgba(0,0,0,.10);}
+  .precio.reina{background:var(--beige); color:var(--tinta); border-color:var(--beige);}
+  .precio .rot{font-size:10.5px; letter-spacing:2.4px; text-transform:uppercase; font-weight:600; color:var(--burg);}
+  .precio .rot.sobre-vino{color:var(--beige);}
+  .precio .cifra{font-family:'Montserrat',sans-serif; font-weight:800; line-height:1;
+                 font-size:clamp(38px,6vw,62px); margin:12px 0 6px; letter-spacing:-1.5px;}
+  .precio .nota{font-size:13px; color:#6B655F;}
+  .precio.reina .cifra{color:var(--burg-hondo);}
+  .precio .nota.sobre-vino{color:rgba(255,255,255,.8);}
+  .condiciones{margin-top:26px; display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px;
+               border-top:1px solid rgba(244,229,210,.3); padding-top:22px; font-size:13px; color:rgba(255,255,255,.86);}
+  .condiciones h5{font-size:10.5px; letter-spacing:2px; text-transform:uppercase; color:var(--beige); margin-bottom:7px; font-weight:600;}
+
+  /* ---------- Galeria ---------- */
+  .galeria{display:grid; grid-template-columns:repeat(4,1fr); gap:12px;}
+  .galeria figure{cursor:zoom-in; aspect-ratio:1/1; transition:opacity .25s;}
+  .galeria figure:hover{opacity:.87;}
+  .galeria figure:nth-child(1){grid-column:span 2; grid-row:span 2; aspect-ratio:auto;}
+
+  /* ---------- Visor ---------- */
+  #visor{position:fixed; inset:0; background:rgba(18,12,14,.94); display:none; place-items:center; z-index:99; padding:26px;}
+  #visor.abierto{display:grid;}
+  #visor img{max-width:100%; max-height:88vh; width:auto; object-fit:contain; border-radius:3px;}
+  #visor button{position:absolute; top:18px; right:20px; min-width:44px; min-height:44px; border:0; border-radius:50%;
+                background:rgba(255,255,255,.14); color:#fff; font-size:22px; cursor:pointer;}
+
+  /* ---------- Pie ---------- */
+  footer{position:relative; color:#fff; text-align:center; padding:60px 22px 46px;
+         background:var(--burg-hondo) center/cover no-repeat;}
+  footer h2{font-size:clamp(24px,4vw,44px); line-height:1.1;}
+  footer .firma-pie{color:var(--beige); font-size:clamp(26px,4.4vw,44px); display:block; margin-top:4px;}
+  footer .sello{margin-top:26px; font-size:12px; color:rgba(255,255,255,.78); letter-spacing:.4px;}
+  footer img.logo{height:26px; margin:0 auto 24px;}
+
+  .aparece{opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease;}
+  .aparece.visible{opacity:1; transform:none;}
+
+  /* ---------- Movil ---------- */
+  @media (max-width:860px){
+    .hero{grid-template-columns:1fr;}
+    .hero-texto{padding:40px 22px 34px; order:2;}
+    .hero-foto{order:1; min-height:250px; height:44vw;}
+    .datos .rejilla{grid-template-columns:repeat(2,1fr);}
+    .duo, .duo.invertido, .precios, .incluye{grid-template-columns:1fr; gap:22px;}
+    .habs{grid-template-columns:1fr;}
+    .galeria{grid-template-columns:repeat(2,1fr);}
+    .galeria figure:nth-child(1){grid-column:span 2; grid-row:auto;}
+    section{padding:44px 0;}
+    .barra button{min-height:44px; padding:0 18px;}   /* regla de marca: 44px en movil */
+    .barra .caja{padding:11px 18px;}
+    .barra span{display:none;}                         /* el rotulo cede el espacio al boton */
+    /* La cifra del total (12 caracteres) no cabe a 38px en 390px: se reescala. */
+    .precio{padding:24px 22px;}
+    .precio .cifra{font-size:clamp(26px,7.4vw,40px); letter-spacing:-1px;}
+  }
+  @media print{
+    body{background:#fff;} .barra, #visor, .pestanas{display:none;}
+    section{padding:20px 0; break-inside:avoid;} .hero-foto{min-height:220px;}
+    .inversion, .hero, footer{-webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  }
+</style>
+</head><body>
+
+<div class="barra"><div class="caja">
+  <img src="../assets/logo-beige.png" alt="Trvely">
+  <div class="dcha">
+    <span>Propuesta corporativa</span>
+    <button onclick="print()">Guardar PDF</button>
+  </div>
+</div></div>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div class="hero-texto">
+    <div class="hero-kicker">Ingram Colombia · Evento corporativo</div>
+    <h1 class="extenda">One 2026</h1>
+    <h2>Punta Cana, República Dominicana</h2>
+    <div class="hero-meta">
+      <b>Martes 17 → viernes 20 de noviembre de 2026</b>
+      <b id="chip-pax">—</b>
+      <b>3 noches</b>
+      <b>Todo Incluido</b>
+    </div>
+  </div>
+  <div class="hero-foto">
+    <img src="fotos/hero-piscina.jpg" alt="Piscina principal del Meliá Punta Cana Beach">
+  </div>
+</header>
+
+<!-- ===================== DATOS DUROS ===================== -->
+<div class="datos"><div class="rejilla">
+  <div class="celda"><div class="dato" id="dato-pax">—</div><div class="rot">Invitados</div></div>
+  <div class="celda"><div class="dato" id="dato-habs">—</div><div class="rot">Habitaciones</div></div>
+  <div class="celda"><div class="dato">3</div><div class="rot">Noches · 4 días</div></div>
+  <div class="celda"><div class="dato">BOG ⇄ PUJ</div><div class="rot">Ida a.&nbsp;m. · regreso p.&nbsp;m.</div></div>
+</div></div>
+
+<!-- ===================== EL HOTEL ===================== -->
+<section class="aparece"><div class="caja">
+  <div class="titulo">
+    <div class="ojo">El destino</div>
+    <h3>Meliá Punta Cana Beach</h3>
+    <p><em>A Wellness Inclusive Resort</em> · cinco estrellas, exclusivo para adultos, régimen
+       <b>Todo Incluido</b>. Playa propia en Bávaro, piscinas, spa, restaurantes y espacios de
+       reunión: un solo lugar para que el grupo trabaje, celebre y descanse sin moverse.</p>
+  </div>
+  <div class="duo">
+    <div class="par">
+      <figure><img src="fotos/resort-aereo.jpg" alt="Vista aérea del resort y sus piscinas" loading="lazy"></figure>
+      <figure><img src="fotos/playa.jpg" alt="Playa de arena blanca frente al hotel" loading="lazy"></figure>
+    </div>
+    <div>
+      <h4>Solo adultos, frente al mar</h4>
+      <p>El resort está pensado para descanso y bienestar: zonas de piscina con palapas,
+         acceso directo a la playa y una programación wellness al aire libre.</p>
+      <p>Al ser un hotel de adultos, el ambiente se mantiene tranquilo — el escenario que
+         un grupo corporativo necesita para combinar agenda de trabajo y celebración.</p>
+      <div class="pie">Bávaro · Punta Cana · República Dominicana</div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ===================== ALOJAMIENTO (con pestañas) ===================== -->
+<section class="claro aparece"><div class="caja">
+  <div class="titulo">
+    <div class="ojo">Alojamiento</div>
+    <h3>Dos formas de acomodar al grupo</h3>
+    <p>Las dos propuestas incluyen exactamente lo mismo. Cambia solo cómo duerme el grupo:
+       compartiendo habitación, o cada invitado en la suya.</p>
+  </div>
+  <div class="pestanas" id="pestanas-hab" role="tablist"></div>
+  <div class="habs" id="habs"></div>
+  <div class="resumen-hab" id="resumen-hab"></div>
+</div></section>
+
+<!-- ===================== EL EVENTO ===================== -->
+<section class="aparece"><div class="caja">
+  <div class="titulo">
+    <div class="ojo">El evento</div>
+    <h3>La agenda de Ingram, montada</h3>
+    <p>Más que un viaje: los momentos del grupo quedan resueltos y con la marca presente.</p>
+  </div>
+  <div class="duo invertido">
+    <div>
+      <h4>Cena privada y espacios de reunión</h4>
+      <p>El <b>jueves 19 de noviembre</b>, cena privada corporativa para el grupo completo en un
+         espacio de alto nivel, reservado solo para Ingram Colombia.</p>
+      <p>El día de llegada se resuelve con un <b>almuerzo o cena ligera de bienvenida</b>, para que
+         nadie dependa del horario del hotel después del vuelo.</p>
+      <div class="pie">Vehículo con marcación Ingram Colombia · snacks de bienvenida en dos entregas
+         durante los traslados · souvenir conmemorativo para cada invitado</div>
+    </div>
+    <div class="par">
+      <figure><img src="fotos/reunion-sala.jpg" alt="Salón de reuniones" loading="lazy"></figure>
+      <figure><img src="fotos/reunion-mesa.jpg" alt="Salón de reuniones con mesa en U" loading="lazy"></figure>
+      <figure><img src="fotos/cena-privada.jpg" alt="Restaurante para cena privada" loading="lazy"></figure>
+      <figure><img src="fotos/bienvenida.jpg" alt="Snacks y cocteles de bienvenida" loading="lazy"></figure>
+    </div>
+  </div>
+</div></section>
+
+<!-- ===================== QUE INCLUYE ===================== -->
+<section class="claro aparece"><div class="caja">
+  <div class="titulo">
+    <div class="ojo">Todo lo que está resuelto</div>
+    <h3>Qué incluye</h3>
+  </div>
+  <ul class="incluye">
+    <li><b>Alojamiento 3 noches — Meliá Punta Cana Beach</b>
+        <small>Adults Only · régimen Todo Incluido · 17 al 20 de noviembre de 2026</small></li>
+    <li><b>Tiquetes aéreos Bogotá ⇄ Punta Cana</b>
+        <small>Vuelos directos · ida en la mañana y regreso en la tarde</small></li>
+    <li><b>Traslados aeropuerto – hotel – aeropuerto</b>
+        <small>Grupo completo, a la llegada y a la salida</small></li>
+    <li><b>Vehículo con marcación Ingram Colombia</b>
+        <small>Brandeo del vehículo del grupo</small></li>
+    <li><b>Cena privada corporativa</b>
+        <small>Jueves 19 de noviembre · grupo completo</small></li>
+    <li><b>Almuerzo o cena ligera el día de llegada</b>
+        <small>Para no depender del horario del hotel</small></li>
+    <li><b>Snacks de bienvenida</b>
+        <small>Dos entregas durante los traslados</small></li>
+    <li><b>Souvenir conmemorativo</b>
+        <small>Un recuerdo del ONE 2026 para cada invitado</small></li>
+    <li><b>Asistencia médica internacional</b>
+        <small>Cobertura durante toda la estadía</small></li>
+    <li><b>Acompañamiento Trvely</b>
+        <small>Coordinación y control operativo del evento</small></li>
+  </ul>
+</div></section>
+
+<!-- ===================== INVERSION ===================== -->
+<section class="inversion aparece"><div class="caja">
+  <div class="titulo" style="color:#fff">
+    <div class="ojo" style="color:var(--beige)">La inversión</div>
+    <h3 class="extenda">Valor de la propuesta</h3>
+  </div>
+  <div class="pestanas sobre-vino" id="pestanas-precio" role="tablist"></div>
+  <div class="precios">
+    <div class="precio reina">
+      <div class="rot">Valor por invitado</div>
+      <div class="cifra" id="precio-pp">—</div>
+      <div class="nota" id="precio-nota">—</div>
+    </div>
+    <div class="precio">
+      <div class="rot sobre-vino">Valor total del grupo</div>
+      <div class="cifra" id="precio-total">—</div>
+      <div class="nota sobre-vino" id="precio-total-nota">—</div>
+    </div>
+  </div>
+  <div class="condiciones">
+    <div><h5>Moneda</h5>Todos los valores están expresados en pesos colombianos (COP).</div>
+    <div><h5>Disponibilidad</h5>Sujeta a disponibilidad de hotel y vuelos al momento de la confirmación.</div>
+    <div><h5>No incluye</h5>Equipaje documentado, gastos personales, propinas y consumos fuera
+        del régimen; y todo lo no descrito en «Qué incluye».</div>
+  </div>
+</div></section>
+
+<!-- ===================== GALERIA ===================== -->
+<section class="aparece"><div class="caja">
+  <div class="titulo">
+    <div class="ojo">El lugar</div>
+    <h3>Punta Cana los espera</h3>
+  </div>
+  <div class="galeria" id="galeria">
+    <figure><img src="fotos/piscina-palapas.jpg" alt="Piscina con palapas" loading="lazy"></figure>
+    <figure><img src="fotos/rooftop-bar.jpg" alt="Bar en la terraza al atardecer" loading="lazy"></figure>
+    <figure><img src="fotos/wellness-playa.jpg" alt="Yoga en la playa" loading="lazy"></figure>
+    <figure><img src="fotos/spa.jpg" alt="Spa del hotel" loading="lazy"></figure>
+    <figure><img src="fotos/bano-suite.jpg" alt="Baño de la habitación" loading="lazy"></figure>
+    <figure><img src="fotos/atardecer.jpg" alt="Atardecer entre palmeras" loading="lazy"></figure>
+  </div>
+</div></section>
+
+<div id="visor"><button aria-label="Cerrar">✕</button><img alt=""></div>
+
+<footer>
+  <img class="logo" src="../assets/logo-beige.png" alt="Trvely">
+  <h2 class="extenda">¡Aquí comienzan</h2>
+  <span class="firma firma-pie">tus más grandes aventuras!</span>
+  <div class="sello">Trvely SAS · trvely.com.co · ONE 2026 · Ingram Colombia · Punta Cana</div>
+</footer>
+
+<script>
+  /* Las dos propuestas. Cada valor viene ya calculado de su fuente interna; aqui no se
+     costea nada. La pagina solo verifica que pp x pax cuadre con el total antes de pintar. */
+  const OPCIONES = [
+    {
+      id:'compartida', tab:'Comparten habitación',
+      pax:35, pp:9428000, total:329980000,
+      habs:[
+        {n:10, tipo:'Premium',  det:'Dos invitados por habitación', foto:'habitacion-premium.jpg'},
+        {n:7,  tipo:'Dobles',   det:'Dos invitados por habitación', foto:'habitacion-doble.jpg'},
+        {n:1,  tipo:'Sencilla', det:'Acomodación individual',       foto:'habitacion-sencilla.jpg'}
+      ],
+      resumen:'18 habitaciones para 35 invitados · 10 Premium + 7 dobles + 1 sencilla. ' +
+              'Los invitados comparten habitación de dos en dos, salvo una sencilla.',
+      nota:'Pesos colombianos · dos invitados por habitación, salvo la sencilla'
+    },
+    {
+      id:'individual', tab:'Cada uno en habitación sola',
+      pax:35, pp:11754000, total:411390000,
+      habs:[
+        {n:35, tipo:'Sencillas', det:'Una habitación por invitado', foto:'habitacion-sencilla.jpg'}
+      ],
+      resumen:'35 habitaciones para 35 invitados · cada quien duerme en su propia habitación, ' +
+              'sin compartir.',
+      nota:'Pesos colombianos · una habitación individual por invitado'
+    }
+  ];
+
+  const cop = n => '$' + Math.round(n).toLocaleString('es-CO').replace(/,/g, '.');
+  let activa = OPCIONES[0];
+
+  function pintar(){
+    /* Habitaciones */
+    document.getElementById('habs').innerHTML = activa.habs.map(h => `
+      <div class="hab">
+        <img src="fotos/${h.foto}" alt="Habitación ${h.tipo}" loading="lazy">
+        <div class="cuerpo"><div class="n">${h.n}</div><div class="tipo">${h.tipo}</div>
+          <div class="det">${h.det}</div></div>
+      </div>`).join('');
+    document.getElementById('resumen-hab').textContent = activa.resumen;
+
+    /* Cada dato del grupo se pinta desde el MISMO objeto: ninguna pieza puede
+       quedar mostrando una opcion mientras otra muestra la otra. */
+    const nHabs = activa.habs.reduce((s,h) => s + h.n, 0);
+    document.getElementById('chip-pax').textContent  = activa.pax + ' invitados';
+    document.getElementById('dato-pax').textContent  = activa.pax;
+    document.getElementById('dato-habs').textContent = nHabs;
+    document.getElementById('precio-pp').textContent = cop(activa.pp);
+    document.getElementById('precio-total').textContent = cop(activa.total);
+    document.getElementById('precio-nota').textContent  = activa.nota;
+    document.getElementById('precio-total-nota').textContent = activa.pax + ' invitados';
+
+    document.querySelectorAll('.pestanas button').forEach(b =>
+      b.setAttribute('aria-selected', b.dataset.id === activa.id));
+  }
+
+  /* Un solo estado, dos juegos de botones (habitaciones y precio) */
+  ['pestanas-hab','pestanas-precio'].forEach(id => {
+    document.getElementById(id).innerHTML = OPCIONES.map(o =>
+      `<button role="tab" data-id="${o.id}">${o.tab}</button>`).join('');
+  });
+  document.querySelectorAll('.pestanas button').forEach(b =>
+    b.addEventListener('click', () => {
+      activa = OPCIONES.find(o => o.id === b.dataset.id);
+      pintar();
+    }));
+
+  /* Guarda de cordura: si una fuente no cuadra (pp x pax != total) o las camas no
+     alcanzan para los invitados, se avisa en consola en vez de publicar un numero mudo. */
+  OPCIONES.forEach(o => {
+    const camas = o.habs.reduce((s,h) => s + h.n * (h.det.startsWith('Dos') ? 2 : 1), 0);
+    if (o.pp * o.pax !== o.total) console.warn(`[${o.id}] pp x pax != total`, o.pp * o.pax, o.total);
+    if (camas !== o.pax) console.warn(`[${o.id}] las habitaciones alojan ${camas}, no ${o.pax}`);
+  });
+
+  pintar();
+
+  /* Fondo del pie: el cielo de la marca, sin texto quemado encima */
+  document.querySelector('footer').style.backgroundImage =
+    "linear-gradient(rgba(124,12,44,.72),rgba(124,12,44,.82)), url('../assets/cielo-footer.webp')";
+
+  /* Visor de fotos */
+  const visor = document.getElementById('visor'), grande = visor.querySelector('img');
+  document.getElementById('galeria').addEventListener('click', e => {
+    const img = e.target.closest('figure')?.querySelector('img');
+    if (!img) return;
+    grande.src = img.src; grande.alt = img.alt; visor.classList.add('abierto');
+  });
+  const cerrar = () => visor.classList.remove('abierto');
+  visor.addEventListener('click', cerrar);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') cerrar(); });
+
+  /* Aparecer al entrar en pantalla */
+  const ojo = new IntersectionObserver(es => es.forEach(x => {
+    if (x.isIntersecting) { x.target.classList.add('visible'); ojo.unobserve(x.target); }
+  }), {threshold:.12});
+  document.querySelectorAll('.aparece').forEach(s => ojo.observe(s));
+</script>
+</body></html>
