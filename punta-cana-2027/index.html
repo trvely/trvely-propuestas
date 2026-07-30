@@ -1,0 +1,364 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#B41241">
+<title>Punta Cana 2027 — Propuesta Trvely</title>
+<meta name="description" content="Propuesta de viaje a Punta Cana 2027 — 22 viajeros, 4 noches todo incluido, dos fechas y cuatro hoteles para elegir.">
+<style>
+  @font-face{font-family:'Extenda';   src:url('../assets/extenda.ttf') format('truetype'); font-weight:400; font-display:swap;}
+  @font-face{font-family:'WhiteStar'; src:url('../assets/whitestar.otf') format('opentype'); font-weight:400; font-display:swap;}
+  @font-face{font-family:'Montserrat';src:url('../assets/montserrat-regular.ttf') format('truetype'); font-weight:400; font-display:swap;}
+  @font-face{font-family:'Montserrat';src:url('../assets/montserrat-semibold.ttf') format('truetype'); font-weight:600; font-display:swap;}
+  @font-face{font-family:'Montserrat';src:url('../assets/montserrat-extrabold.ttf') format('truetype'); font-weight:800; font-display:swap;}
+
+  :root{
+    --burg:#B41241; --burg-hondo:#7C0C2C; --beige:#F4E5D2; --crema:#FAF7F2; --nieve:#fff;
+    --tinta:#1C1B1A; --gris:#7C7671; --linea:#E9DFD4; --linea-fuerte:#DED2C4;
+    --verde:#1C7C4A; --verde-fondo:#EAF6EE; --verde-linea:#BFE3CD; --ancho:1180px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Montserrat','Segoe UI',system-ui,sans-serif; background:var(--crema); color:var(--tinta);
+       font-size:15px; line-height:1.62; -webkit-font-smoothing:antialiased;}
+  img{display:block; max-width:100%;}
+  ::selection{background:var(--beige);}
+  .caja{max-width:var(--ancho); margin:0 auto; padding:0 22px;}
+  .extenda{font-family:'Extenda','Montserrat',sans-serif; font-weight:400; text-transform:uppercase; letter-spacing:1px;}
+  .firma{font-family:'WhiteStar','Segoe Script',cursive; font-weight:400;}
+
+  .barra{background:var(--burg); color:#fff;}
+  .barra .caja{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:13px 22px;}
+  .barra img{height:22px}
+  .barra span{font-size:10.5px; letter-spacing:2.2px; text-transform:uppercase; color:var(--beige); font-weight:600;}
+  .barra button{background:transparent; border:1px solid rgba(244,229,210,.45); color:var(--beige); border-radius:999px;
+    padding:0 16px; min-height:34px; font-size:11px; letter-spacing:1.4px; text-transform:uppercase; font-weight:600;
+    cursor:pointer; font-family:inherit;}
+  .barra button:hover{background:rgba(244,229,210,.14);}
+  .barra .dcha{display:flex; align-items:center; gap:14px;}
+
+  /* Hero partido: el color va AL LADO de la foto, nunca encima */
+  .hero{background:radial-gradient(120% 140% at 88% 0%, #99143C 0%, var(--burg) 45%, var(--burg-hondo) 100%);
+        color:#fff; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:stretch;}
+  .hero-texto{padding:60px 44px 62px max(22px, calc((100vw - var(--ancho)) / 2 + 22px)); align-self:center;}
+  .hero-kicker{font-size:11px; letter-spacing:3px; text-transform:uppercase; color:var(--beige); font-weight:600;}
+  .hero h1{font-size:clamp(46px,7vw,86px); line-height:.92; margin:14px 0 6px;}
+  .hero h2{font-family:'Montserrat',sans-serif; font-weight:800; font-size:clamp(19px,2.4vw,27px);
+           line-height:1.14; color:var(--beige); margin-bottom:20px;}
+  .hero-meta{display:flex; flex-wrap:wrap; gap:9px; margin-top:24px;}
+  .hero-meta b{background:rgba(255,255,255,.13); border:1px solid rgba(244,229,210,.34); border-radius:999px;
+               padding:7px 15px; font-size:12.5px; font-weight:600;}
+  .hero-foto{position:relative; min-height:430px; background:#7C0C2C;}
+  .hero-foto img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;}
+
+  .datos{background:var(--beige); border-top:3px solid var(--burg);}
+  .datos .rejilla{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--linea-fuerte);}
+  .datos .celda{background:var(--beige); padding:20px 18px; text-align:center;}
+  .datos .dato{font-family:'Montserrat',sans-serif; font-weight:800; font-size:clamp(20px,2.6vw,29px); line-height:1.05; color:var(--burg-hondo);}
+  .datos .rot{font-size:10.5px; letter-spacing:1.7px; text-transform:uppercase; color:#8A6A55; margin-top:6px; font-weight:600;}
+
+  section{padding:58px 0;}
+  section.claro{background:var(--nieve); border-top:1px solid var(--linea); border-bottom:1px solid var(--linea);}
+  .titulo{margin-bottom:26px;}
+  .titulo .paso{display:inline-grid; place-items:center; width:30px; height:30px; border-radius:50%;
+        background:var(--burg); color:#fff; font-weight:800; font-size:14px; margin-bottom:10px;}
+  .titulo h3{font-size:clamp(27px,3.6vw,42px); line-height:1;}
+  .titulo p{color:var(--gris); max-width:62ch; margin-top:12px;}
+
+  /* ---------- Paso 1: la fecha ---------- */
+  .fechas{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
+  .fecha{position:relative; text-align:left; cursor:pointer; font-family:inherit; background:var(--nieve);
+    border:2px solid var(--linea-fuerte); border-radius:5px; padding:24px 26px; transition:border-color .2s, box-shadow .2s;}
+  .fecha:hover{border-color:var(--burg);}
+  .fecha[aria-pressed="true"]{border-color:var(--burg); box-shadow:0 0 0 4px rgba(180,18,65,.09);}
+  .fecha .mes{font-size:10.5px; letter-spacing:2.4px; text-transform:uppercase; color:var(--burg); font-weight:600;}
+  .fecha .dias{font-family:'Montserrat',sans-serif; font-weight:800; font-size:clamp(21px,2.8vw,30px); line-height:1.1; margin:6px 0 2px;}
+  .fecha .sub{font-size:13.5px; color:var(--gris);}
+  .fecha .sello{display:inline-block; margin-top:12px; background:var(--verde-fondo); color:var(--verde);
+    border:1px solid var(--verde-linea); border-radius:999px; padding:4px 13px; font-size:12px; font-weight:600;}
+  .fecha .marca{position:absolute; top:16px; right:18px; width:26px; height:26px; border-radius:50%;
+    border:2px solid var(--linea-fuerte); display:grid; place-items:center; color:#fff; font-size:14px; font-weight:800;}
+  .fecha[aria-pressed="true"] .marca{background:var(--burg); border-color:var(--burg);}
+
+  /* ---------- Paso 2: el hotel ---------- */
+  .hoteles{display:grid; grid-template-columns:repeat(auto-fit,minmax(258px,1fr)); gap:20px;}
+  .hotel{background:var(--nieve); border:1px solid var(--linea); border-radius:5px; overflow:hidden;
+         display:flex; flex-direction:column; position:relative;}
+  .hotel .foto{position:relative; cursor:zoom-in;}
+  .hotel .foto img{aspect-ratio:3/2; width:100%; object-fit:cover;}
+  .hotel .lupa{position:absolute; right:10px; bottom:10px; background:rgba(28,27,26,.72); color:#fff;
+    border-radius:999px; padding:5px 12px; font-size:11.5px; font-weight:600;}
+  .hotel .cuerpo{padding:18px 20px 22px; display:flex; flex-direction:column; flex:1;}
+  .hotel .estrellas{color:var(--burg); font-size:12px; letter-spacing:1px;}
+  .hotel h4{font-family:'Montserrat',sans-serif; font-weight:800; font-size:18.5px; line-height:1.2; margin:4px 0 14px;}
+  .hotel .pp{font-family:'Montserrat',sans-serif; font-weight:800; font-size:clamp(25px,3.1vw,31px);
+             line-height:1; color:var(--burg-hondo); letter-spacing:-.8px;}
+  .hotel .pp-rot{font-size:10.5px; letter-spacing:1.8px; text-transform:uppercase; color:var(--gris); font-weight:600;}
+  .hotel .nino{margin-top:12px; padding-top:12px; border-top:1px solid var(--linea); font-size:14px;}
+  .hotel .nino b{font-weight:800;}
+  .hotel .total{margin-top:auto; padding-top:14px; font-size:13px; color:var(--gris);}
+  .hotel .total b{color:var(--tinta); font-weight:800; font-size:15px; display:block;}
+  .hotel .cinta{position:absolute; top:12px; left:0; background:var(--verde); color:#fff; font-size:11px;
+    font-weight:700; letter-spacing:.6px; padding:5px 13px; border-radius:0 999px 999px 0;}
+
+  .incluye{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px;}
+  .inc{background:var(--nieve); border:1px solid var(--linea); border-radius:4px; padding:22px 22px 24px;}
+  .inc .n{font-family:'Montserrat',sans-serif; font-weight:800; font-size:13px; color:var(--burg);
+    background:var(--beige); border-radius:50%; width:34px; height:34px; display:grid; place-items:center; margin-bottom:12px;}
+  .inc > b{display:block; font-weight:800; margin-bottom:5px;}   /* solo el titulo, no los <b> del texto */
+  .inc small{color:var(--gris); font-size:13.5px; line-height:1.55; display:block;}
+
+  .nota-final{margin-top:26px; display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px;
+              border-top:1px solid var(--linea); padding-top:22px; font-size:13px; color:var(--gris);}
+  .nota-final h5{font-size:10.5px; letter-spacing:2px; text-transform:uppercase; color:var(--burg); margin-bottom:7px; font-weight:600;}
+
+  /* ---------- Visor ---------- */
+  #visor{position:fixed; inset:0; background:rgba(18,12,14,.95); display:none; z-index:99; padding:22px;}
+  #visor.abierto{display:grid; place-items:center; grid-template-rows:1fr auto;}
+  #visor img{max-width:100%; max-height:78vh; width:auto; object-fit:contain; border-radius:3px;}
+  #visor .pie{color:#fff; text-align:center; padding-top:16px;}
+  #visor .pie b{display:block; font-weight:800; font-size:16px;}
+  #visor .pie span{font-size:13px; color:rgba(255,255,255,.7);}
+  #visor .cerrar{position:absolute; top:16px; right:18px;}
+  #visor button{min-width:44px; min-height:44px; border:0; border-radius:50%; background:rgba(255,255,255,.16);
+    color:#fff; font-size:20px; cursor:pointer;}
+  #visor button:hover{background:rgba(255,255,255,.28);}
+  #visor .flechas{display:flex; gap:14px; justify-content:center; margin-top:14px;}
+
+  footer{position:relative; color:#fff; text-align:center; padding:60px 22px 46px;
+         background:var(--burg-hondo) center/cover no-repeat;}
+  footer h2{font-size:clamp(24px,4vw,44px); line-height:1.1;}
+  footer .firma-pie{color:var(--beige); font-size:clamp(26px,4.4vw,44px); display:block; margin-top:4px;}
+  footer .sello{margin-top:26px; font-size:12px; color:rgba(255,255,255,.78);}
+  footer img.logo{height:26px; margin:0 auto 24px;}
+
+  .aparece{opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease;}
+  .aparece.visible{opacity:1; transform:none;}
+
+  @media (max-width:860px){
+    .hero{grid-template-columns:1fr;}
+    .hero-texto{padding:40px 22px 34px; order:2;}
+    .hero-foto{order:1; min-height:250px; height:44vw;}
+    .datos .rejilla{grid-template-columns:repeat(2,1fr);}
+    .fechas{grid-template-columns:1fr;}
+    .hoteles{grid-template-columns:repeat(auto-fit,minmax(148px,1fr)); gap:14px;}
+    .hotel .cuerpo{padding:14px 15px 18px;}
+    .hotel h4{font-size:15.5px;}
+    section{padding:42px 0;}
+    .barra button{min-height:44px; padding:0 18px;}
+    .barra .caja{padding:11px 18px;}
+    .barra span{display:none;}
+  }
+  @media print{
+    body{background:#fff;} .barra, #visor, .hotel .lupa{display:none;}
+    section{padding:18px 0; break-inside:avoid;} .hero-foto{min-height:200px;}
+    .hero, footer, .datos{-webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  }
+</style>
+</head><body>
+
+<div class="barra"><div class="caja">
+  <img src="../assets/logo-beige.png" alt="Trvely">
+  <div class="dcha">
+    <span>Propuesta de viaje</span>
+    <button onclick="print()">Guardar PDF</button>
+  </div>
+</div></div>
+
+<header class="hero">
+  <div class="hero-texto">
+    <div class="hero-kicker">Grupo · 22 viajeros</div>
+    <h1 class="extenda">Punta Cana</h1>
+    <h2>República Dominicana · 2027</h2>
+    <div class="hero-meta">
+      <b>4 noches</b><b>Todo incluido</b><b>18 adultos y 4 niños</b><b>Vuelo directo</b>
+    </div>
+  </div>
+  <div class="hero-foto">
+    <img src="fotos/catalonia-punta-cana-hero.jpg" alt="Piscina frente al mar en Punta Cana">
+  </div>
+</header>
+
+<div class="datos"><div class="rejilla">
+  <div class="celda"><div class="dato">22</div><div class="rot">Viajeros</div></div>
+  <div class="celda"><div class="dato">18 + 4</div><div class="rot">Adultos y niños</div></div>
+  <div class="celda"><div class="dato">4</div><div class="rot">Noches</div></div>
+  <div class="celda"><div class="dato">9</div><div class="rot">Habitaciones</div></div>
+</div></div>
+
+<!-- ===================== PASO 1 · LA FECHA ===================== -->
+<section class="aparece"><div class="caja">
+  <div class="titulo">
+    <div class="paso">1</div>
+    <h3>Elige la fecha</h3>
+    <p>Las dos son de 4 noches y con todo incluido. La única diferencia es el precio del vuelo:
+       viajar en febrero sale más barato.</p>
+  </div>
+  <div class="fechas" id="fechas"></div>
+</div></section>
+
+<!-- ===================== PASO 2 · EL HOTEL ===================== -->
+<section class="claro aparece"><div class="caja">
+  <div class="titulo">
+    <div class="paso">2</div>
+    <h3>Elige el hotel</h3>
+    <p id="sub-hoteles">Cuatro opciones, todas con todo incluido. Los precios ya son finales por
+       persona para la fecha que elegiste.</p>
+  </div>
+  <div class="hoteles" id="hoteles"></div>
+</div></section>
+
+<!-- ===================== QUE INCLUYE ===================== -->
+<section class="aparece"><div class="caja">
+  <div class="titulo">
+    <h3>Qué incluye, en cualquier opción</h3>
+  </div>
+  <div class="incluye">
+    <div class="inc"><div class="n">01</div><b>Vuelos</b>
+      <small>Ida y regreso para los 22 viajeros, en la fecha que elijan.</small></div>
+    <div class="inc"><div class="n">02</div><b>Traslados</b>
+      <small>Del aeropuerto al hotel y del hotel al aeropuerto.</small></div>
+    <div class="inc"><div class="n">03</div><b>Alojamiento 4 noches</b>
+      <small>En el hotel que elijan, con <b>todo incluido</b>: comidas y bebidas del resort.</small></div>
+    <div class="inc"><div class="n">04</div><b>Asistencia médica</b>
+      <small>Cobertura para los 22 viajeros durante todo el viaje.</small></div>
+  </div>
+  <div class="nota-final">
+    <div><h5>Moneda</h5>Todos los valores están en pesos colombianos (COP), por persona.</div>
+    <div><h5>Disponibilidad</h5>Sujeta a disponibilidad de hotel y vuelos al momento de confirmar.</div>
+    <div><h5>No incluye</h5>Gastos personales, propinas y todo lo no descrito arriba.</div>
+  </div>
+</div></section>
+
+<div id="visor">
+  <img alt="">
+  <div class="pie">
+    <b id="visor-hotel"></b>
+    <span id="visor-conteo"></span>
+    <div class="flechas">
+      <button id="ant" aria-label="Anterior">‹</button>
+      <button id="sig" aria-label="Siguiente">›</button>
+    </div>
+  </div>
+  <button class="cerrar" aria-label="Cerrar">✕</button>
+</div>
+
+<footer>
+  <img class="logo" src="../assets/logo-beige.png" alt="Trvely">
+  <h2 class="extenda">¡Aquí comienzan</h2>
+  <span class="firma firma-pie">tus más grandes aventuras!</span>
+  <div class="sello">Trvely SAS · trvely.com.co · Punta Cana 2027</div>
+</footer>
+
+<script>
+  const ADULTOS = 18, NINOS = 4;
+
+  /* Precios del simulador Punta Cana 22 pax. Cada fila es hotel x fecha, tal como la fuente. */
+  const FECHAS = [
+    {id:'enero',   mes:'Fecha 1 · Enero 2027',  dias:'21 al 25 de enero',   sub:'Jueves a lunes · 4 noches'},
+    {id:'febrero', mes:'Fecha 2 · Febrero 2027', dias:'6 al 10 de febrero', sub:'Sábado a miércoles · 4 noches'}
+  ];
+  const HOTELES = [
+    {id:'whala-bavaro',             nombre:'Whala! Bávaro',        est:4,
+     precios:{enero:{ad:4029667, ni:3437000, total:86282000}, febrero:{ad:3405667, ni:2813000, total:72554000}}},
+    {id:'sunscape-coco-punta-cana', nombre:'Sunscape Coco Punta Cana', est:4,
+     precios:{enero:{ad:4093667, ni:3501000, total:87690000}, febrero:{ad:3470667, ni:2878000, total:73984000}}},
+    {id:'catalonia-punta-cana',     nombre:'Catalonia Punta Cana', est:5,
+     precios:{enero:{ad:4384667, ni:3792000, total:94092000}, febrero:{ad:3760667, ni:3168000, total:80364000}}},
+    {id:'riu-bambu',                nombre:'Riu Bambu',            est:5,
+     precios:{enero:{ad:5092667, ni:4500000, total:109668000}, febrero:{ad:4469667, ni:3877000, total:95962000}}}
+  ];
+
+  const cop = n => '$' + Math.round(n).toLocaleString('es-CO').replace(/,/g, '.');
+  let fecha = 'febrero';   /* arranca en la más económica */
+
+  function pintarFechas(){
+    document.getElementById('fechas').innerHTML = FECHAS.map(f => {
+      /* El ahorro se calcula, no se escribe a mano: siempre concuerda con los precios */
+      const dif = Math.min(...HOTELES.map(h => h.precios.enero.ad - h.precios.febrero.ad));
+      const sello = f.id === 'febrero' ? `<span class="sello">Ahorran desde ${cop(dif)} por adulto</span>` : '';
+      return `<button class="fecha" data-fecha="${f.id}" aria-pressed="${f.id === fecha}">
+          <div class="marca">✓</div>
+          <div class="mes">${f.mes}</div>
+          <div class="dias">${f.dias}</div>
+          <div class="sub">${f.sub}</div>${sello}
+        </button>`;
+    }).join('');
+    document.querySelectorAll('.fecha').forEach(b => b.addEventListener('click', () => {
+      fecha = b.dataset.fecha; pintarFechas(); pintarHoteles();
+    }));
+  }
+
+  function pintarHoteles(){
+    const orden = [...HOTELES].sort((a,b) => a.precios[fecha].ad - b.precios[fecha].ad);
+    document.getElementById('hoteles').innerHTML = orden.map((h,i) => {
+      const p = h.precios[fecha];
+      return `<div class="hotel">
+        ${i === 0 ? '<div class="cinta">El más económico</div>' : ''}
+        <div class="foto" data-hotel="${h.id}">
+          <img src="fotos/${h.id}-hero.jpg" alt="${h.nombre}" loading="lazy">
+          <div class="lupa">Ver fotos</div>
+        </div>
+        <div class="cuerpo">
+          <div class="estrellas">${'★'.repeat(h.est)}${'☆'.repeat(5-h.est)}</div>
+          <h4>${h.nombre}</h4>
+          <div class="pp-rot">Por adulto</div>
+          <div class="pp">${cop(p.ad)}</div>
+          <div class="nino">Por niño <b>${cop(p.ni)}</b></div>
+          <div class="total">Total del grupo<b>${cop(p.total)}</b></div>
+        </div>
+      </div>`;
+    }).join('');
+    document.querySelectorAll('.hotel .foto').forEach(f =>
+      f.addEventListener('click', () => abrirVisor(f.dataset.hotel, 0)));
+    const f = FECHAS.find(x => x.id === fecha);
+    document.getElementById('sub-hoteles').textContent =
+      `Cuatro opciones, todas con todo incluido. Precios por persona para el ${f.dias.toLowerCase()} de 2027.`;
+  }
+
+  /* ---------- Visor de fotos por hotel ---------- */
+  const visor = document.getElementById('visor'), vImg = visor.querySelector('img');
+  let vHotel = null, vIdx = 0;
+  const FOTOS = ['hero','g1','g2','g3','g4'];
+
+  function abrirVisor(id, i){
+    vHotel = HOTELES.find(h => h.id === id); vIdx = i;
+    mostrarFoto(); visor.classList.add('abierto');
+  }
+  function mostrarFoto(){
+    vImg.src = `fotos/${vHotel.id}-${FOTOS[vIdx]}.jpg`;
+    vImg.alt = vHotel.nombre;
+    document.getElementById('visor-hotel').textContent = vHotel.nombre;
+    document.getElementById('visor-conteo').textContent = `Foto ${vIdx+1} de ${FOTOS.length}`;
+  }
+  const mover = d => { vIdx = (vIdx + d + FOTOS.length) % FOTOS.length; mostrarFoto(); };
+  document.getElementById('sig').addEventListener('click', e => { e.stopPropagation(); mover(1); });
+  document.getElementById('ant').addEventListener('click', e => { e.stopPropagation(); mover(-1); });
+  const cerrar = () => visor.classList.remove('abierto');
+  visor.querySelector('.cerrar').addEventListener('click', cerrar);
+  visor.addEventListener('click', e => { if (e.target === visor) cerrar(); });
+  document.addEventListener('keydown', e => {
+    if (!visor.classList.contains('abierto')) return;
+    if (e.key === 'Escape') cerrar();
+    if (e.key === 'ArrowRight') mover(1);
+    if (e.key === 'ArrowLeft')  mover(-1);
+  });
+
+  /* Guarda de cordura: que 18 adultos + 4 ninos den el total de la fuente.
+     Tolerancia de 100 pesos porque el precio del adulto trae decimales. */
+  HOTELES.forEach(h => FECHAS.forEach(f => {
+    const p = h.precios[f.id], suma = p.ad * ADULTOS + p.ni * NINOS;
+    if (Math.abs(suma - p.total) > 100)
+      console.warn(`[${h.id}/${f.id}] la suma da ${suma} y el total dice ${p.total}`);
+  }));
+
+  pintarFechas(); pintarHoteles();
+
+  document.querySelector('footer').style.backgroundImage =
+    "linear-gradient(rgba(124,12,44,.72),rgba(124,12,44,.82)), url('../assets/cielo-footer.webp')";
+
+  const ojo = new IntersectionObserver(es => es.forEach(x => {
+    if (x.isIntersecting) { x.target.classList.add('visible'); ojo.unobserve(x.target); }
+  }), {threshold:.12});
+  document.querySelectorAll('.aparece').forEach(s => ojo.observe(s));
+</script>
+</body></html>
