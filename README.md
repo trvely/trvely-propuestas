@@ -28,6 +28,7 @@ compartir por un enlace en vez de un PDF adjunto. Hermano de `trvely-galerias`,
 |---|---|---|---|
 | `ingram-one-2026/` | Ingram Colombia · ONE 2026 | Punta Cana | 17–20 nov 2026 |
 | `punta-cana-2027/` | Grupo de 22 (asesora Jenny Losada) | Punta Cana | ene o feb 2027 |
+| `cancun-cdmx-2027/` | Grupo de 9 adultos · COT-2026-CUNMEX-01 | Cancún + Ciudad de México | 1–8 jun 2027 |
 
 ---
 Trvely SAS

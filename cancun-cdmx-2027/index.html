@@ -1,0 +1,516 @@
+<!doctype html><html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#B41241">
+<title>Cancún + Ciudad de México 2027 — Propuesta Trvely</title>
+<meta name="description" content="Propuesta de viaje Cancún + Ciudad de México — 9 adultos, 7 noches, tres opciones de hotel en Cancún y Hotel Imperial Reforma en Ciudad de México.">
+<style>
+  @font-face{font-family:'Extenda';   src:url('../assets/extenda.ttf') format('truetype'); font-weight:400; font-display:swap;}
+  @font-face{font-family:'WhiteStar'; src:url('../assets/whitestar.otf') format('opentype'); font-weight:400; font-display:swap;}
+  @font-face{font-family:'Montserrat';src:url('../assets/montserrat-regular.ttf') format('truetype'); font-weight:400; font-display:swap;}
+  @font-face{font-family:'Montserrat';src:url('../assets/montserrat-semibold.ttf') format('truetype'); font-weight:600; font-display:swap;}
+  @font-face{font-family:'Montserrat';src:url('../assets/montserrat-extrabold.ttf') format('truetype'); font-weight:800; font-display:swap;}
+
+  :root{
+    --burg:#B41241; --burg-hondo:#7C0C2C; --beige:#F4E5D2; --crema:#FAF7F2; --nieve:#fff;
+    --tinta:#1C1B1A; --gris:#7C7671; --linea:#E9DFD4; --linea-fuerte:#DED2C4;
+    --verde:#1C7C4A; --verde-fondo:#EAF6EE; --verde-linea:#BFE3CD; --ancho:1180px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Montserrat','Segoe UI',system-ui,sans-serif; background:var(--crema); color:var(--tinta);
+       font-size:15px; line-height:1.62; -webkit-font-smoothing:antialiased;}
+  img{display:block; max-width:100%;}
+  ::selection{background:var(--beige);}
+  .caja{max-width:var(--ancho); margin:0 auto; padding:0 22px;}
+  .extenda{font-family:'Extenda','Montserrat',sans-serif; font-weight:400; text-transform:uppercase; letter-spacing:1px;}
+  .firma{font-family:'WhiteStar','Segoe Script',cursive; font-weight:400;}
+
+  .barra{background:var(--burg); color:#fff;}
+  .barra .caja{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:13px 22px;}
+  .barra img{height:22px}
+  .barra span{font-size:10.5px; letter-spacing:2.2px; text-transform:uppercase; color:var(--beige); font-weight:600;}
+  .barra button{background:transparent; border:1px solid rgba(244,229,210,.45); color:var(--beige); border-radius:999px;
+    padding:0 16px; min-height:34px; font-size:11px; letter-spacing:1.4px; text-transform:uppercase; font-weight:600;
+    cursor:pointer; font-family:inherit;}
+  .barra button:hover{background:rgba(244,229,210,.14);}
+  .barra .dcha{display:flex; align-items:center; gap:14px;}
+
+  /* Hero partido: el color va AL LADO de la foto, nunca encima */
+  .hero{background:radial-gradient(120% 140% at 88% 0%, #99143C 0%, var(--burg) 45%, var(--burg-hondo) 100%);
+        color:#fff; display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:stretch;}
+  .hero-texto{padding:58px 44px 60px max(22px, calc((100vw - var(--ancho)) / 2 + 22px)); align-self:center;}
+  .hero-kicker{font-size:11px; letter-spacing:3px; text-transform:uppercase; color:var(--beige); font-weight:600;}
+  .hero h1{font-size:clamp(38px,5.4vw,64px); line-height:.96; margin:14px 0 6px;}
+  .hero h2{font-family:'Montserrat',sans-serif; font-weight:800; font-size:clamp(18px,2.2vw,25px);
+           line-height:1.14; color:var(--beige); margin-bottom:18px;}
+  .hero p{color:rgba(255,255,255,.86); max-width:46ch; font-size:15px;}
+  .hero-meta{display:flex; flex-wrap:wrap; gap:9px; margin-top:24px;}
+  .hero-meta b{background:rgba(255,255,255,.13); border:1px solid rgba(244,229,210,.34); border-radius:999px;
+               padding:7px 15px; font-size:12.5px; font-weight:600;}
+  .hero-fotos{display:grid; grid-template-rows:1fr 1fr; min-height:470px; background:#7C0C2C;}
+  .hero-fotos figure{position:relative; overflow:hidden;}
+  .hero-fotos img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;}
+  .hero-fotos figcaption{position:absolute; left:0; bottom:0; background:rgba(28,27,26,.62); color:#fff;
+    font-size:11px; letter-spacing:1.4px; text-transform:uppercase; font-weight:600; padding:6px 13px;}
+
+  .datos{background:var(--beige); border-top:3px solid var(--burg);}
+  .datos .rejilla{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--linea-fuerte);}
+  .datos .celda{background:var(--beige); padding:20px 18px; text-align:center;}
+  .datos .dato{font-family:'Montserrat',sans-serif; font-weight:800; font-size:clamp(20px,2.6vw,29px); line-height:1.05; color:var(--burg-hondo);}
+  .datos .rot{font-size:10.5px; letter-spacing:1.7px; text-transform:uppercase; color:#8A6A55; margin-top:6px; font-weight:600;}
+
+  section{padding:56px 0;}
+  section.claro{background:var(--nieve); border-top:1px solid var(--linea); border-bottom:1px solid var(--linea);}
+  .titulo{margin-bottom:26px;}
+  .titulo .paso{display:inline-grid; place-items:center; width:30px; height:30px; border-radius:50%;
+        background:var(--burg); color:#fff; font-weight:800; font-size:14px; margin-bottom:10px;}
+  .titulo h3{font-size:clamp(26px,3.4vw,40px); line-height:1;}
+  .titulo p{color:var(--gris); max-width:64ch; margin-top:12px;}
+
+  /* ---------- Las tres opciones de Cancún ---------- */
+  .hoteles{display:grid; grid-template-columns:repeat(auto-fit,minmax(268px,1fr)); gap:20px;}
+  .hotel{background:var(--nieve); border:2px solid var(--linea-fuerte); border-radius:5px; overflow:hidden;
+         display:flex; flex-direction:column; position:relative; text-align:left; font-family:inherit;
+         cursor:pointer; transition:border-color .2s, box-shadow .2s; padding:0;}
+  .hotel:hover{border-color:var(--burg);}
+  .hotel[aria-pressed="true"]{border-color:var(--burg); box-shadow:0 0 0 4px rgba(180,18,65,.09);}
+  .hotel .foto{position:relative;}
+  .hotel .foto img{aspect-ratio:3/2; width:100%; object-fit:cover;}
+  .hotel .lupa{position:absolute; right:10px; bottom:10px; background:rgba(28,27,26,.72); color:#fff;
+    border:0; border-radius:999px; padding:6px 13px; font-size:11.5px; font-weight:600; cursor:zoom-in; font-family:inherit;}
+  .hotel .marca{position:absolute; top:12px; right:12px; width:28px; height:28px; border-radius:50%;
+    border:2px solid #fff; background:rgba(28,27,26,.4); display:grid; place-items:center; color:#fff; font-size:15px; font-weight:800;}
+  .hotel[aria-pressed="true"] .marca{background:var(--burg); border-color:var(--burg);}
+  .hotel .cuerpo{padding:18px 20px 22px; display:flex; flex-direction:column; flex:1;}
+  .hotel .op{font-size:10.5px; letter-spacing:2.2px; text-transform:uppercase; color:var(--burg); font-weight:600;}
+  .hotel h4{font-family:'Montserrat',sans-serif; font-weight:800; font-size:18.5px; line-height:1.2; margin:5px 0 10px;}
+  .hotel .desc{font-size:13.5px; color:var(--gris); line-height:1.5; margin-bottom:14px;}
+  .hotel .pp-rot{font-size:10.5px; letter-spacing:1.8px; text-transform:uppercase; color:var(--gris); font-weight:600;}
+  .hotel .pp{font-family:'Montserrat',sans-serif; font-weight:800; font-size:clamp(25px,3.1vw,31px);
+             line-height:1; color:var(--burg-hondo); letter-spacing:-.8px; margin-top:2px;}
+  .hotel .total{margin-top:auto; padding-top:14px; font-size:13px; color:var(--gris);}
+  .hotel .total b{color:var(--tinta); font-weight:800; font-size:15px; display:block;}
+  .hotel .cinta{position:absolute; top:12px; left:0; background:var(--verde); color:#fff; font-size:11px;
+    font-weight:700; letter-spacing:.6px; padding:5px 13px; border-radius:0 999px 999px 0;}
+  .ficha{margin-top:14px; padding-top:14px; border-top:1px solid var(--linea); display:grid; gap:6px; font-size:13px;}
+  .ficha div{display:flex; justify-content:space-between; gap:12px;}
+  .ficha span{color:var(--gris);} .ficha b{font-weight:600; text-align:right;}
+
+  /* ---------- Resumen de la elección ---------- */
+  .resumen{background:var(--burg); color:#fff; border-radius:5px; padding:26px 28px; margin-top:26px;
+    display:grid; grid-template-columns:1fr auto; gap:22px; align-items:center;}
+  .resumen .txt .k{font-size:10.5px; letter-spacing:2.2px; text-transform:uppercase; color:var(--beige); font-weight:600;}
+  .resumen .txt .v{font-family:'Montserrat',sans-serif; font-weight:800; font-size:clamp(19px,2.4vw,25px); line-height:1.2; margin-top:5px;}
+  .resumen .txt small{display:block; color:rgba(255,255,255,.82); font-size:13.5px; margin-top:8px;}
+  .resumen .cifra{text-align:right;}
+  .resumen .cifra .pp{font-weight:800; font-size:clamp(26px,3.4vw,34px); line-height:1; letter-spacing:-.8px;}
+  .resumen .cifra .rot{font-size:10.5px; letter-spacing:1.8px; text-transform:uppercase; color:var(--beige); font-weight:600; margin-top:6px;}
+  .resumen .cifra .tot{font-size:13.5px; color:rgba(255,255,255,.86); margin-top:9px;}
+
+  /* ---------- Ciudad de México ---------- */
+  .mex{display:grid; grid-template-columns:1.15fr 1fr; gap:26px; align-items:start;}
+  .mex .galeria{display:grid; grid-template-columns:1fr 1fr; gap:10px;}
+  .mex .galeria figure{position:relative; cursor:zoom-in;}
+  .mex .galeria img{aspect-ratio:4/3; width:100%; object-fit:cover; border-radius:4px;}
+  .mex .galeria figcaption{font-size:11.5px; color:var(--gris); margin-top:5px; line-height:1.35;}
+  .mex .texto h4{font-family:'Montserrat',sans-serif; font-weight:800; font-size:22px; line-height:1.2; margin-bottom:12px;}
+  .mex .texto p{color:var(--gris); margin-bottom:16px;}
+
+  /* ---------- Ruta y vuelos ---------- */
+  .ruta{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-bottom:30px;}
+  .tramo{background:var(--nieve); border:1px solid var(--linea); border-left:3px solid var(--burg); border-radius:4px; padding:18px 20px;}
+  .tramo .n{font-size:10.5px; letter-spacing:2.2px; text-transform:uppercase; color:var(--burg); font-weight:600;}
+  .tramo .t{font-family:'Montserrat',sans-serif; font-weight:800; font-size:17px; line-height:1.25; margin:6px 0 8px;}
+  .tramo .d{font-size:13.5px; color:var(--gris); line-height:1.5;}
+
+  .tabla{width:100%; border-collapse:collapse; font-size:14px; background:var(--nieve);}
+  .tabla th{background:var(--burg); color:#fff; text-align:left; padding:12px 14px; font-size:11px;
+    letter-spacing:1.4px; text-transform:uppercase; font-weight:600;}
+  .tabla td{padding:12px 14px; border-bottom:1px solid var(--linea);}
+  .tabla tr:nth-child(even) td{background:#FBF7F3;}
+  .tabla td.num{text-align:right; white-space:nowrap; font-weight:600;}
+  .tabla-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+
+  .incluye{display:grid; grid-template-columns:1fr 1fr; gap:26px;}
+  .incluye h5{font-size:11px; letter-spacing:2.2px; text-transform:uppercase; color:var(--burg); font-weight:600; margin-bottom:12px;}
+  .incluye ul{list-style:none;}
+  .incluye li{position:relative; padding-left:20px; margin-bottom:8px; font-size:14px; line-height:1.5;}
+  .incluye li:before{content:""; position:absolute; left:0; top:9px; width:7px; height:7px; border-radius:50%; background:var(--burg);}
+  .incluye .no li:before{background:var(--linea-fuerte);}
+
+  .aviso{background:var(--beige); border-left:4px solid var(--burg); border-radius:0 4px 4px 0;
+    padding:18px 22px; font-size:13.5px; line-height:1.6; color:#5A4A42; margin-top:26px;}
+  .aviso b{font-weight:800;}
+
+  /* ---------- Visor ---------- */
+  #visor{position:fixed; inset:0; background:rgba(18,12,14,.95); display:none; z-index:99; padding:22px;}
+  #visor.abierto{display:grid; place-items:center; grid-template-rows:1fr auto;}
+  #visor img{max-width:100%; max-height:76vh; width:auto; object-fit:contain; border-radius:3px;}
+  #visor .pie{color:#fff; text-align:center; padding-top:16px;}
+  #visor .pie b{display:block; font-weight:800; font-size:16px;}
+  #visor .pie span{font-size:13px; color:rgba(255,255,255,.7);}
+  #visor .cerrar{position:absolute; top:16px; right:18px;}
+  #visor button{min-width:44px; min-height:44px; border:0; border-radius:50%; background:rgba(255,255,255,.16);
+    color:#fff; font-size:20px; cursor:pointer;}
+  #visor button:hover{background:rgba(255,255,255,.28);}
+  #visor .flechas{display:flex; gap:14px; justify-content:center; margin-top:14px;}
+
+  footer{position:relative; color:#fff; text-align:center; padding:58px 22px 46px;
+         background:var(--burg-hondo) center/cover no-repeat;}
+  footer h2{font-size:clamp(24px,4vw,42px); line-height:1.1;}
+  footer .firma-pie{color:var(--beige); font-size:clamp(26px,4.4vw,42px); display:block; margin-top:4px;}
+  footer .sello{margin-top:26px; font-size:12px; color:rgba(255,255,255,.78); max-width:70ch; margin-inline:auto;}
+  footer img.logo{height:26px; margin:0 auto 24px;}
+
+  .aparece{opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease;}
+  .aparece.visible{opacity:1; transform:none;}
+
+  @media (max-width:860px){
+    .hero{grid-template-columns:1fr;}
+    .hero-texto{padding:38px 22px 34px; order:2;}
+    .hero-fotos{order:1; min-height:0; grid-template-rows:1fr; grid-template-columns:1fr 1fr; height:44vw;}
+    .datos .rejilla{grid-template-columns:repeat(2,1fr);}
+    .hoteles{grid-template-columns:1fr; gap:16px;}
+    .mex{grid-template-columns:1fr; gap:20px;}
+    .ruta{grid-template-columns:1fr; gap:12px;}
+    .incluye{grid-template-columns:1fr; gap:22px;}
+    .resumen{grid-template-columns:1fr; gap:16px; padding:22px;}
+    .resumen .cifra{text-align:left;}
+    /* en el celular la tabla se vuelve tarjetas: nada se sale de la pantalla */
+    .tabla-scroll{overflow-x:visible;}
+    .tabla, .tabla tbody, .tabla tr, .tabla td{display:block; width:100%;}
+    .tabla thead{display:none;}
+    .tabla tr{background:var(--nieve); border:1px solid var(--linea); border-left:3px solid var(--burg);
+      border-radius:4px; margin-bottom:12px; padding:6px 4px;}
+    .tabla tr:nth-child(even) td{background:transparent;}
+    .tabla td{border:0; padding:7px 14px; display:flex; justify-content:space-between; gap:14px; align-items:baseline;}
+    .tabla td:before{content:attr(data-r); font-size:10.5px; letter-spacing:1.4px; text-transform:uppercase;
+      color:var(--gris); font-weight:600; flex:0 0 auto;}
+    .tabla td[data-r="Experiencia"]{display:block; border-bottom:1px solid var(--linea); padding-bottom:10px;}
+    .tabla td[data-r="Experiencia"]:before{display:block; margin-bottom:4px;}
+    .tabla td.num{text-align:right;}
+    .tabla td[data-r="Por persona"] b, .tabla td[data-r="Por persona"]{color:var(--burg-hondo); font-weight:800;}
+    section{padding:40px 0;}
+    .barra button{min-height:44px; padding:0 18px;}
+    .barra .caja{padding:11px 18px;}
+    .barra span{display:none;}
+  }
+  @media print{
+    body{background:#fff;} .barra, #visor, .hotel .lupa, .hotel .marca{display:none;}
+    section{padding:18px 0; break-inside:avoid;} .hero-fotos{min-height:200px;}
+    .aparece{opacity:1; transform:none;}
+    .hero, footer, .datos, .resumen{-webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  }
+</style>
+</head><body>
+
+<div class="barra"><div class="caja">
+  <img src="../assets/logo-beige.png" alt="Trvely">
+  <div class="dcha">
+    <span>Propuesta de viaje</span>
+    <button onclick="print()">Guardar PDF</button>
+  </div>
+</div></div>
+
+<header class="hero">
+  <div class="hero-texto">
+    <div class="hero-kicker">Grupo · 9 viajeros</div>
+    <h1 class="extenda">Cancún<br>+ Ciudad de México</h1>
+    <h2>México · junio de 2027</h2>
+    <p>Una experiencia entre Caribe mexicano, cultura, historia y ciudad.</p>
+    <div class="hero-meta">
+      <b>7 noches</b><b>Todo incluido en Cancún</b><b>9 adultos</b><b>Vuelos directos</b>
+    </div>
+  </div>
+  <div class="hero-fotos">
+    <figure><img src="fotos/nyx-hero.jpg" alt="Playa de Cancún vista desde el mar"><figcaption>Cancún · 4 noches</figcaption></figure>
+    <figure><img src="fotos/imperial-hero.jpg" alt="Fachada del Hotel Imperial Reforma en Ciudad de México"><figcaption>Ciudad de México · 3 noches</figcaption></figure>
+  </div>
+</header>
+
+<div class="datos"><div class="rejilla">
+  <div class="celda"><div class="dato">9</div><div class="rot">Adultos</div></div>
+  <div class="celda"><div class="dato">7</div><div class="rot">Noches</div></div>
+  <div class="celda"><div class="dato">2</div><div class="rot">Ciudades</div></div>
+  <div class="celda"><div class="dato">3</div><div class="rot">Habitaciones</div></div>
+</div></div>
+
+<!-- ===================== PASO 1 · EL HOTEL DE CANCÚN ===================== -->
+<section class="aparece"><div class="caja">
+  <div class="titulo">
+    <div class="paso">1</div>
+    <h3>Elige tu hotel en Cancún</h3>
+    <p>Los vuelos, los traslados y las tres noches en Ciudad de México son idénticos en las tres opciones.
+       Elegir es solo decidir dónde dormir esas cuatro noches frente al Caribe. Toca una opción para verla
+       en el resumen, y la lupa para ver más fotos.</p>
+  </div>
+  <div class="hoteles" id="hoteles"></div>
+
+  <div class="resumen" id="resumen">
+    <div class="txt">
+      <div class="k">Tu viaje</div>
+      <div class="v" id="r-nombre">Occidental Tucancún + Hotel Imperial Reforma</div>
+      <small>7 noches · 9 adultos · vuelos, traslados y asistencia médica incluidos</small>
+    </div>
+    <div class="cifra">
+      <div class="pp" id="r-pp">$6.026.000</div>
+      <div class="rot">Por persona</div>
+      <div class="tot">Total 9 pasajeros · <b id="r-total">$54.234.000</b></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ===================== PASO 2 · CIUDAD DE MÉXICO ===================== -->
+<section class="claro aparece"><div class="caja">
+  <div class="titulo">
+    <div class="paso">2</div>
+    <h3>Las últimas tres noches, en Ciudad de México</h3>
+    <p>Este hotel es el mismo en las tres opciones: no cambia con lo que elijan en Cancún.</p>
+  </div>
+  <div class="mex">
+    <div class="galeria" id="galeria-mex"></div>
+    <div class="texto">
+      <h4>Hotel Imperial Reforma</h4>
+      <p>Sobre el Paseo de la Reforma, en un edificio histórico de cúpula dorada, a pasos del Ángel de la
+         Independencia. Terminar el viaje aquí es cambiar el mar por la ciudad sin perder el ritmo: se sale
+         del hotel caminando hacia lo que hay que ver.</p>
+      <div class="ficha">
+        <div><span>Habitaciones</span><b>3 Estándar matrimonial</b></div>
+        <div><span>Régimen</span><b>Desayuno continental</b></div>
+        <div><span>Noches</span><b>3 · del 5 al 8 de junio</b></div>
+        <div><span>Check-in</span><b>sábado 5 · 3:00 p. m.</b></div>
+        <div><span>Check-out</span><b>martes 8 · 12:00 p. m.</b></div>
+        <div><span>Traslado</span><b>Privado en minivan</b></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ===================== PASO 3 · LA RUTA ===================== -->
+<section class="aparece"><div class="caja">
+  <div class="titulo">
+    <div class="paso">3</div>
+    <h3>La ruta del viaje</h3>
+    <p>Siete noches en dos Méxicos distintos: cuatro frente al Caribe y tres en el corazón de la capital.
+       Los tres tramos se vuelan directo, sin conexiones.</p>
+  </div>
+  <div class="ruta">
+    <div class="tramo"><div class="n">Tramo 1</div><div class="t">Bogotá a Cancún</div>
+      <div class="d">martes 1 de junio de 2027<br>Avianca · sale 7:45 a. m.<br>llega 11:35 a. m. · 3h 50m · directo</div></div>
+    <div class="tramo"><div class="n">Tramo 2</div><div class="t">Cancún a Ciudad de México</div>
+      <div class="d">sábado 5 de junio de 2027<br>Volaris · sale 3:20 p. m.<br>llega 4:40 p. m. · 2h 20m · directo</div></div>
+    <div class="tramo"><div class="n">Tramo 3</div><div class="t">Ciudad de México a Bogotá</div>
+      <div class="d">martes 8 de junio de 2027<br>Avianca · sale 11:20 p. m.<br>llega 4:55 a. m. (+1) · 4h 35m · directo</div></div>
+  </div>
+  <div class="aviso">
+    <b>Tres cosas para tener en cuenta.</b> Los tres tramos son directos, sin cambios de avión en el camino.
+    El sábado 5 se sale del hotel en Cancún y se vuela a Ciudad de México en la tarde. Y el regreso es de noche:
+    el martes 8 el vuelo sale a las 11:20 p. m. y aterriza en Bogotá a las 4:55 a. m. del día siguiente.
+    <br><br>
+    Vuelos estimados según tarifa referencial. Sujetos a disponibilidad, cambios tarifarios y reconfirmación
+    al momento de reservar.
+  </div>
+</div></section>
+
+<!-- ===================== PASO 4 · EXPERIENCIAS ===================== -->
+<section class="claro aparece"><div class="caja">
+  <div class="titulo">
+    <div class="paso">4</div>
+    <h3>Experiencias opcionales</h3>
+    <p>No están incluidas en el precio del paquete. Se agregan si el grupo las quiere, y se reservan con
+       anticipación para asegurar el cupo.</p>
+  </div>
+  <div class="tabla-scroll">
+    <table class="tabla">
+      <thead><tr><th>Experiencia</th><th>Zona</th><th>Duración</th><th style="text-align:right">Por persona</th><th style="text-align:right">Total 9 pax</th></tr></thead>
+      <tbody id="tabla-tours"></tbody>
+    </table>
+  </div>
+  <div class="aviso">Los tours y experiencias son opcionales y no están incluidos en la tarifa base.
+    Su elección puede modificar el valor final del paquete.</div>
+</div></section>
+
+<!-- ===================== INCLUYE / NO INCLUYE ===================== -->
+<section class="aparece"><div class="caja">
+  <div class="titulo"><h3>Qué incluye y qué no</h3></div>
+  <div class="incluye">
+    <div><h5>Incluye</h5><ul id="lista-si"></ul></div>
+    <div><h5>No incluye</h5><ul class="no" id="lista-no"></ul></div>
+  </div>
+  <div class="aviso">
+    <b>Condiciones.</b> Cotización referencial sujeta a disponibilidad, cambios tarifarios y reconfirmación
+    de vuelos, hoteles y servicios al momento de reservar. Los precios están en pesos colombianos por persona
+    en acomodación doble para un grupo de 9 adultos: un cambio en el número de viajeros o en la acomodación
+    modifica el valor. Las tasas hoteleras o cargos de destino pagaderos directamente en el hotel, si aplican,
+    corren por cuenta del pasajero.
+  </div>
+</div></section>
+
+<div id="visor">
+  <button class="cerrar" aria-label="Cerrar">✕</button>
+  <img alt="">
+  <div class="pie">
+    <b id="visor-hotel"></b>
+    <span id="visor-conteo"></span>
+    <div class="flechas">
+      <button id="visor-ant" aria-label="Anterior">‹</button>
+      <button id="visor-sig" aria-label="Siguiente">›</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <img class="logo" src="../assets/logo-beige.png" alt="Trvely">
+  <h2 class="extenda">Cuando quieran, arrancamos</h2>
+  <span class="firma firma-pie">¡aquí comienzan tus aventuras!</span>
+  <div class="sello">Elijan la opción que más les guste y la aseguramos: confirmamos disponibilidad de vuelos
+    y hotel, y les enviamos el itinerario en firme. · Trvely SAS · COT-2026-CUNMEX-01</div>
+</footer>
+
+<script>
+  const COP = n => "$" + n.toLocaleString("es-CO");
+
+  const HOTELES = [
+    { id:"tucancun", op:"Opción 1", nombre:"Occidental Tucancún", pp:6026000, total:54234000,
+      cinta:"La más económica",
+      desc:"Todo incluido frente al Caribe, en plena Zona Hotelera. Habitaciones con vista al mar y piscina a pasos de la playa.",
+      ficha:[["Habitaciones","3 dobles"],["Régimen","Todo incluido"],["Check-in","martes 1 · 3:00 p. m."],["Check-out","sábado 5 · 11:00 a. m."]],
+      fotos:[["tucancun-hero","La piscina y el edificio frente al mar"],["tucancun-1","Habitación con vista al Caribe"],
+             ["tucancun-2","Habitación doble"],["tucancun-3","Espacios interiores del hotel"]] },
+    { id:"nyx", op:"Opción 2", nombre:"Hotel NYX Cancún", pp:6079000, total:54711000,
+      cinta:"",
+      desc:"Todo incluido sobre la playa, con habitaciones Deluxe y una franja de arena blanca con palapas y camas balinesas.",
+      ficha:[["Habitaciones","3 Deluxe"],["Régimen","Todo incluido"],["Check-in","martes 1 · 3:00 p. m."],["Check-out","sábado 5 · 12:00 p. m."]],
+      fotos:[["nyx-hero","El hotel visto desde el mar"],["nyx-1","La playa del hotel"],
+             ["nyx-2","Camas balinesas frente al mar"],["nyx-3","Habitación Deluxe"]] },
+    { id:"riu", op:"Opción 3", nombre:"Riu Caribe · All Inclusive", pp:7427000, total:66843000,
+      cinta:"Categoría más alta",
+      desc:"Playa propia de arena blanca, piscina frente al mar y habitaciones renovadas con vista parcial al Caribe.",
+      ficha:[["Habitaciones","3 estándar doble"],["Régimen","Todo incluido"],["Check-in","martes 1 · 3:00 p. m."],["Check-out","sábado 5 · 12:00 p. m."]],
+      fotos:[["riu-hero","Playa propia y mar Caribe"],["riu-1","Piscina frente al mar"],
+             ["riu-2","Habitación con vista parcial al mar"],["riu-3","Uno de los restaurantes"]] }
+  ];
+
+  const MEX = { nombre:"Hotel Imperial Reforma",
+    fotos:[["imperial-hero","La fachada sobre el Paseo de la Reforma"],["imperial-1","Habitación con vista a la ciudad"],
+           ["imperial-2","Habitación Estándar matrimonial"],["imperial-3","El desayuno continental del hotel"],
+           ["imperial-4","La vista desde la habitación"]] };
+
+  const TOURS = [
+    ["Combo Aventura: Xcaret Plus + Xplor + Xel-Há 20% OFF","Playa del Carmen / Riviera Maya","Todo el día",1374520],
+    ["Catamarán y snórkel a Isla Mujeres, por Albatros","Isla Mujeres","7 horas",263029],
+    ["Basílica de Guadalupe y Pirámides de Teotihuacán","Ciudad de México","9 horas",133224],
+    ["Lucha Libre en CDMX","Ciudad de México","3 horas",176455],
+    ["Museo de Frida Kahlo + panorámico Coyoacán + Xochimilco","Ciudad de México","5 horas",267624]
+  ];
+
+  const SI = ["Tiquete aéreo Bogotá – Cancún","Tiquete aéreo Cancún – Ciudad de México",
+    "Tiquete aéreo Ciudad de México – Bogotá","4 noches de alojamiento en Cancún, en el hotel que elijan",
+    "3 noches de alojamiento en el Hotel Imperial Reforma, Ciudad de México","Régimen Todo incluido en Cancún",
+    "Desayuno continental en Ciudad de México","Traslado compartido en Cancún",
+    "Traslado privado en minivan en Ciudad de México","Asistencia médica internacional","Impuestos incluidos",
+    "Acompañamiento Trvely durante todo el proceso de reserva"];
+
+  const NO = ["Tours opcionales","Gastos personales","Servicios no especificados",
+    "Equipaje documentado, salvo confirmación posterior","Traslados no mencionados","Alimentación no indicada",
+    "Propinas","Early check-in o late check-out","Cambios, penalidades o diferencias tarifarias",
+    "Tasas hoteleras o cargos de destino pagaderos directamente en destino, si aplican"];
+
+  /* ---------- pinta las tres opciones ---------- */
+  const cont = document.getElementById("hoteles");
+  HOTELES.forEach((h, i) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "hotel"; b.setAttribute("aria-pressed", i === 0 ? "true" : "false");
+    b.dataset.id = h.id;
+    b.innerHTML = `
+      <div class="foto">
+        ${h.cinta ? `<div class="cinta">${h.cinta}</div>` : ""}
+        <div class="marca">✓</div>
+        <img src="fotos/${h.fotos[0][0]}.jpg" alt="${h.nombre}" loading="lazy">
+        <button type="button" class="lupa" data-galeria="${h.id}">Ver fotos</button>
+      </div>
+      <div class="cuerpo">
+        <div class="op">${h.op} · Cancún</div>
+        <h4>${h.nombre}</h4>
+        <div class="desc">${h.desc}</div>
+        <div class="pp-rot">Por persona</div>
+        <div class="pp">${COP(h.pp)}</div>
+        <div class="ficha">${h.ficha.map(f => `<div><span>${f[0]}</span><b>${f[1]}</b></div>`).join("")}</div>
+        <div class="total">Total 9 pasajeros<b>${COP(h.total)}</b></div>
+      </div>`;
+    b.addEventListener("click", e => {
+      if (e.target.classList.contains("lupa")) return;
+      elegir(h.id);
+    });
+    cont.appendChild(b);
+  });
+
+  function elegir(id) {
+    const h = HOTELES.find(x => x.id === id);
+    document.querySelectorAll(".hotel").forEach(el =>
+      el.setAttribute("aria-pressed", el.dataset.id === id ? "true" : "false"));
+    document.getElementById("r-nombre").textContent = h.nombre + " + Hotel Imperial Reforma";
+    document.getElementById("r-pp").textContent = COP(h.pp);
+    document.getElementById("r-total").textContent = COP(h.total);
+  }
+
+  /* ---------- galería de Ciudad de México ---------- */
+  const gm = document.getElementById("galeria-mex");
+  MEX.fotos.slice(0, 4).forEach((f, i) => {
+    const fig = document.createElement("figure");
+    fig.innerHTML = `<img src="fotos/${f[0]}.jpg" alt="${f[1]}" loading="lazy"><figcaption>${f[1]}</figcaption>`;
+    fig.addEventListener("click", () => abrir(MEX, i));
+    gm.appendChild(fig);
+  });
+
+  /* ---------- tours e includes ---------- */
+  document.getElementById("tabla-tours").innerHTML = TOURS.map(t =>
+    `<tr><td data-r="Experiencia"><b>${t[0]}</b></td><td data-r="Zona">${t[1]}</td>
+     <td data-r="Duración">${t[2]}</td>
+     <td class="num" data-r="Por persona">${COP(t[3])}</td>
+     <td class="num" data-r="Total 9 pax">${COP(t[3] * 9)}</td></tr>`).join("");
+  document.getElementById("lista-si").innerHTML = SI.map(x => `<li>${x}</li>`).join("");
+  document.getElementById("lista-no").innerHTML = NO.map(x => `<li>${x}</li>`).join("");
+
+  /* ---------- visor de fotos ---------- */
+  const visor = document.getElementById("visor"), vImg = visor.querySelector("img");
+  let vLugar = null, vIdx = 0;
+
+  document.querySelectorAll(".lupa").forEach(btn =>
+    btn.addEventListener("click", e => {
+      e.stopPropagation();
+      abrir(HOTELES.find(h => h.id === btn.dataset.galeria), 0);
+    }));
+
+  function abrir(lugar, i) { vLugar = lugar; vIdx = i; mostrar(); visor.classList.add("abierto"); }
+  function mostrar() {
+    const f = vLugar.fotos[vIdx];
+    vImg.src = `fotos/${f[0]}.jpg`; vImg.alt = f[1];
+    document.getElementById("visor-hotel").textContent = vLugar.nombre;
+    document.getElementById("visor-conteo").textContent = `${f[1]} — foto ${vIdx + 1} de ${vLugar.fotos.length}`;
+  }
+  const mover = d => { vIdx = (vIdx + d + vLugar.fotos.length) % vLugar.fotos.length; mostrar(); };
+  document.getElementById("visor-ant").addEventListener("click", () => mover(-1));
+  document.getElementById("visor-sig").addEventListener("click", () => mover(1));
+  const cerrar = () => visor.classList.remove("abierto");
+  visor.querySelector(".cerrar").addEventListener("click", cerrar);
+  visor.addEventListener("click", e => { if (e.target === visor) cerrar(); });
+  document.addEventListener("keydown", e => {
+    if (!visor.classList.contains("abierto")) return;
+    if (e.key === "Escape") cerrar();
+    if (e.key === "ArrowLeft") mover(-1);
+    if (e.key === "ArrowRight") mover(1);
+  });
+
+  /* ---------- aparecer al bajar ---------- */
+  const obs = new IntersectionObserver(es => es.forEach(x => {
+    if (x.isIntersecting) { x.target.classList.add("visible"); obs.unobserve(x.target); }
+  }), { threshold: .12 });
+  document.querySelectorAll(".aparece").forEach(el => obs.observe(el));
+
+  /* ---------- cielo del pie ---------- */
+  document.querySelector("footer").style.backgroundImage =
+    "linear-gradient(rgba(124,12,44,.72),rgba(124,12,44,.82)), url('../assets/cielo-footer.webp')";
+</script>
+</body></html>
