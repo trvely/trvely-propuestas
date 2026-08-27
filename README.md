@@ -26,9 +26,18 @@ compartir por un enlace en vez de un PDF adjunto. Hermano de `trvely-galerias`,
 
 | Carpeta | Cliente · evento | Destino | Fechas |
 |---|---|---|---|
-| `ingram-one-2026/` | Ingram Colombia · ONE 2026 | Punta Cana | 17–20 nov 2026 |
-| `punta-cana-2027/` | Grupo de 22 (asesora Jenny Losada) | Punta Cana | ene o feb 2027 |
 | `cancun-cdmx-2027/` | Grupo de 9 adultos · COT-2026-CUNMEX-01 | Cancún + Ciudad de México | 1–8 jun 2027 |
+
+## Archivadas (despublicadas)
+
+No confirmaron. Viven en `_archivo/`: **el enlace público da 404 pero los archivos no se
+perdieron** — GitHub Pages ignora las carpetas que empiezan por guion bajo. Para revivir una:
+`git mv _archivo/<carpeta> <carpeta>` y push.
+
+| Carpeta | Cliente · evento | Destino | Despublicada |
+|---|---|---|---|
+| `_archivo/ingram-one-2026/` | Ingram Colombia · ONE 2026 | Punta Cana | 27-ago-2026 |
+| `_archivo/punta-cana-2027/` | Grupo de 22 (asesora Jenny Losada) | Punta Cana | 27-ago-2026 |
 
 ---
 Trvely SAS
